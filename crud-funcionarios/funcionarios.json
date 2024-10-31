@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": 1,
+        "nome": "Teste",
+        "cargo": "Teste",
+        "salario": "200",
+        "status": true
+    }
+]
