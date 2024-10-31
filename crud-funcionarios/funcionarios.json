@@ -5,5 +5,12 @@
         "cargo": "Teste",
         "salario": "200",
         "status": true
+    },
+    {
+        "id": 2,
+        "nome": "Teste 2",
+        "cargo": "Teste 2",
+        "salario": "2000",
+        "status": true
     }
 ]
