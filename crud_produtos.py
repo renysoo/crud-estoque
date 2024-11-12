@@ -105,45 +105,30 @@ def exibir_menu():
     print("6. Retornar ao menu principal")
 
 
-def main():
-    
-    while True:
-        menu_inicial()
-        opcao_inicial = int(input("Informe uma opção: "))
+def menu_produtos():
+    while True: 
+        exibir_menu()
+        opcao = input("Indique a sua opção:\n>>>")
 
-        if opcao_inicial == 1:
-                while True: 
-
-                    exibir_menu()
-                    opcao = input("Indique a sua opção:\n>>>")
-
-                    if opcao == '1':
-                        id = input("Código de identificação do produto (id):\n>>>")
-                        nome = input("Nome do produto:\n>>>")
-                        quantidade = int(input("Quantidade do produto:\n>>>"))
-                        valor = float(input("Valor do produto: R$\n>>>"))
-                        adicionar_produto(id, nome, quantidade, valor)
-                    elif opcao == '2':
-                        listar_produtos()
-                    elif opcao == '3':
-                        id = input("Insira o id para buscar o produto: ")
-                        buscar_produto(id)
-                    elif opcao == '4':
-                        atualizar_produtos()
-                    elif opcao == '5':
-                        deletar_produtos()
-                    elif opcao == '6':
-                        print("Você retornará ao menu principal")
-                        sleep(3)
-                        break
-                    else:
-                        print("Opção inválida. Por favor, tente novamente")
-        elif opcao_inicial == 2:
-                print("Encerrando...")
-                sleep(3)
-                break
+        if opcao == '1':
+            id = input("Código de identificação do produto (id):\n>>>")
+            nome = input("Nome do produto:\n>>>")
+            quantidade = int(input("Quantidade do produto:\n>>>"))
+            valor = float(input("Valor do produto: R$\n>>>"))
+            adicionar_produto(id, nome, quantidade, valor)
+        elif opcao == '2':
+            listar_produtos()
+        elif opcao == '3':
+            id = input("Insira o id para buscar o produto: ")
+            buscar_produto(id)
+        elif opcao == '4':
+            atualizar_produtos()
+        elif opcao == '5':
+            deletar_produtos()
+        elif opcao == '6':
+            print("Você retornará ao menu principal")
+            sleep(3)
+            break
         else:
-                print("Opção inválida. Por favor, tente novamente")
+            print("Opção inválida. Por favor, tente novamente")
 
-if __name__ == "__main__":
-    main()

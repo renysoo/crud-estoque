@@ -1,28 +1,25 @@
+from crud_vendas import menu_vendas 
+from crud_produtos import menu_produtos
+# from crud_funcionarios
+
 def menu():
     while True:
-        print("\n1. Adicionar Produto")
-        print("2. Listar Produtos")
-        print("3. Atualizar Produto")
-        print("4. Remover Produto")
-        print("5. Verificar Alertas")
-        print("6. Sair")
+        print("\nQue operação deseja realizar?\n")
+        print("1. Gerenciar Produtos")
+        print("2. Gerenciar Vendas")
+        print("3. Gerenciar Funcionários")
+        print("4. Sair")
 
         escolha = input("Escolha uma opção: ")
 
         if escolha == '1':
-            print('cadastrando produto')
+            menu_produtos()
         elif escolha == '2':
-            print('listando produtos')
+            menu_vendas()
         elif escolha == '3':
-            id_produto = int(input("ID do produto: "))
-            print('atualizando produto')
+            print('gerenciando produto')
         elif escolha == '4':
-            id_produto = int(input("ID do produto: "))
-            print('deletando produto')
-        elif escolha == '5':
-            print('verificando alertas')
-        elif escolha == '6':
-            print("Saindo...")
+            print('*** Encerrando programa ***')
             break
         else:
             print("Opção inválida. Tente novamente.")
