@@ -1,6 +1,11 @@
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), 'crud-funcionarios'))
+
 from crud_vendas import menu_vendas 
 from crud_produtos import menu_produtos
-# from crud_funcionarios
+from painel_funcionarios import menu_funcionarios
 
 def menu():
     while True:
@@ -17,7 +22,7 @@ def menu():
         elif escolha == '2':
             menu_vendas()
         elif escolha == '3':
-            print('gerenciando produto')
+            menu_funcionarios()
         elif escolha == '4':
             print('*** Encerrando programa ***')
             break
