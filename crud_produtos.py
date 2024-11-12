@@ -35,7 +35,7 @@ def listar_produtos():
         print("~" *50)
 
         for produto in produtos:
-            print(f' produto {produto['id']} \n id: {produto['id']}\n nome: {produto['nome']}\n quantidade: {produto['quantidade']}\n valor: {produto['valor']}')
+            print(f"produto {produto['id']} \n id: {produto['id']}\n nome: {produto['nome']}\n quantidade: {produto['quantidade']}\n valor: {produto['valor']}")
 
             print("*" *50) 
     else:
