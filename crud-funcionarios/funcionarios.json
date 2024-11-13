@@ -1,12 +1,5 @@
 [
     {
-        "id": 1,
-        "nome": "vitinho",
-        "cargo": "Desenvolvedor",
-        "salario": "1700",
-        "setor": "Operacional"
-    },
-    {
         "id": 2,
         "nome": "Pedro",
         "cargo": "Analista QA",
@@ -19,5 +12,12 @@
         "cargo": "Desenvolvedor Back-End",
         "salario": 3.0,
         "setor": "TI"
+    },
+    {
+        "id": 4,
+        "nome": "René",
+        "cargo": "Suporte TI numa empresa mt grande e ele ganha mt dinheiro",
+        "salario": "3",
+        "setor": "Suporto"
     }
 ]

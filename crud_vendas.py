@@ -24,7 +24,7 @@ def cadastrar_venda():
     venda["valor"] = input("Digite o valor total da venda: ")
     lista_vendas.append(venda)
     salvar_vendas()
-    print("\nProduto cadastrado com sucesso!")
+    print("\nVenda cadastrado com sucesso!")
     
 def itens_venda():
     itens = {}

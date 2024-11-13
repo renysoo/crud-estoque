@@ -48,6 +48,7 @@ def buscar_produto(id):
         if(produto['id']==id):
             print("\nProduto encontrado!")
             print(f'\n produto {produto['id']} \n id: {produto['id']}\n nome: {produto['nome']}\n quantidade: {produto['quantidade']}\n valor: {produto['valor']}')
+            break       
         else: 
             print("\nProduto não encontrado!")
             break
