@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "nome": "Teste",
-        "cargo": "Teste",
-        "salario": "200",
-        "status": true
+        "nome": "vitinho",
+        "cargo": "Desenvolvedor",
+        "salario": "1700",
+        "setor": "Operacional"
     },
     {
         "id": 2,
-        "nome": "Teste 2",
-        "cargo": "Teste 2",
-        "salario": "2000",
-        "status": true
+        "nome": "Pedro",
+        "cargo": "Analista QA",
+        "salario": 1300.0,
+        "setor": "TI"
     },
     {
         "id": 3,
-        "nome": "Teste 3",
-        "cargo": "Teste 3",
-        "salario": "2500",
-        "status": true
+        "nome": "Erik",
+        "cargo": "Desenvolvedor Back-End",
+        "salario": 3.0,
+        "setor": "TI"
     }
 ]

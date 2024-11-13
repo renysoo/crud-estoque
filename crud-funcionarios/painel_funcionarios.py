@@ -3,28 +3,31 @@ from crud_funcionarios import *
 def menu_funcionarios():
     while True:
         op = menu()
-        match(op):
-            case 1:
-                nome = input("Insira o nome do funcionário novo: ")
-                cargo = input("Insira o cargo do funcionário novo: ")
-                salario = input("Insira o salario do funcionário novo: ")
-                status = True
-                adicionar_funcionario(nome, cargo, salario, status)
-            
-            case 2:
-                listar_funcionarios()
-            
-            case 3:
-                atualizar_funcionario()
-            case 4:
-                listar_funcionarios_com_id()
-                
-                id = int(input("Insira o id do funcionário o qual deseja deletar: "))
-                
-                deletar_funcionario(id)
-            case 5:
-                print("Encerrando o sistema...")
-                break    
-            case _:
-                print("Valor inválido!! Por favor, insira um valor de 1 á 5")
+        if op == '1':
+            limpar_terminal()
+            adicionar_funcionario()
         
+        elif op == '2':
+            limpar_terminal()
+            listar_funcionarios()
+        
+        elif op == '3':
+            limpar_terminal()
+            atualizar_funcionario()
+        
+        elif op == '4':
+            limpar_terminal()
+            buscar_funcionario() 
+        elif op == '5':
+            limpar_terminal()
+            listar_funcionarios()
+            
+            id = int(input("Insira o id do funcionário o qual deseja deletar: "))
+            
+            deletar_funcionario(id)
+        elif op == '6':
+            print("Encerrando o sistema...")
+            break    
+        else:
+            print("Valor inválido!! Por favor, insira um valor de 1 á 5")
+    
